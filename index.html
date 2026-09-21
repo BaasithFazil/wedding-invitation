@@ -199,10 +199,62 @@
       .curtain.left {
         left: 0;
         transform-origin: 12% center;
+        background-image:
+          linear-gradient(
+            to left,
+            rgba(201, 162, 75, 0.55) 0 4px,
+            rgba(255, 255, 255, 0.14) 4px 6px,
+            transparent 6px 10px,
+            rgba(58, 37, 73, 0.3) 10px 12px,
+            transparent 12px 16px,
+            rgba(255, 255, 255, 0.09) 16px 17px,
+            transparent 17px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            rgba(122, 86, 152, 0.5) 0 16px,
+            rgba(97, 66, 128, 0.44) 16px 28px,
+            rgba(146, 118, 174, 0.4) 28px 46px,
+            rgba(122, 92, 160, 0.48) 46px 60px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 28px,
+            rgba(255, 255, 255, 0.05) 28px 29.5px,
+            transparent 29.5px 52px,
+            rgba(58, 37, 73, 0.12) 52px 54px,
+            transparent 54px 68px
+          );
       }
       .curtain.right {
         right: 0;
         transform-origin: 88% center;
+        background-image:
+          linear-gradient(
+            90deg,
+            rgba(201, 162, 75, 0.55) 0 4px,
+            rgba(255, 255, 255, 0.14) 4px 6px,
+            transparent 6px 10px,
+            rgba(58, 37, 73, 0.3) 10px 12px,
+            transparent 12px 16px,
+            rgba(255, 255, 255, 0.09) 16px 17px,
+            transparent 17px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            rgba(122, 86, 152, 0.5) 0 16px,
+            rgba(97, 66, 128, 0.44) 16px 28px,
+            rgba(146, 118, 174, 0.4) 28px 46px,
+            rgba(122, 92, 160, 0.48) 46px 60px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 28px,
+            rgba(255, 255, 255, 0.05) 28px 29.5px,
+            transparent 29.5px 52px,
+            rgba(58, 37, 73, 0.12) 52px 54px,
+            transparent 54px 68px
+          );
       }
 
       #intro.opened .curtain.left {
@@ -1068,7 +1120,6 @@
       <div class="curtain right"></div>
 
       <img class="curtain-logo" alt="Baasith &amp; Hamra wedding logo" />
-      <div class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
       <button class="open-btn" onclick="openCurtains()">
         Proceed<small>Reveal the invitation</small>
       </button>
